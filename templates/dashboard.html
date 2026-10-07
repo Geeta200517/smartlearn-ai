@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartLearn AI – Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="nav-brand">SmartLearn AI</a>
+    <div class="nav-right">
+      <a href="{{ url_for('index') }}" class="nav-link">&#127891; Take a Quiz</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">&#128202; Student Dashboard</h1>
+
+    <!-- Search -->
+    <div class="card">
+      <form action="{{ url_for('dashboard') }}" method="GET" class="search-form">
+        <input
+          type="text"
+          name="name"
+          class="search-input"
+          placeholder="Enter student name to view progress…"
+          value="{{ student_name }}"
+        />
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    {% if student_name %}
+      {% if rows %}
+
+      <!-- Summary Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">{{ rows|length }}</div>
+          <div class="stat-label">Total Attempts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ (rows|map(attribute='score')|list|sum / rows|length)|int }}%</div>
+          <div class="stat-label">Average Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ rows|map(attribute='score')|list|max }}%</div>
+          <div class="stat-label">Best Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ rows[0]['level'] }}</div>
+          <div class="stat-label">Latest Level</div>
+        </div>
+      </div>
+
+      <!-- Matplotlib Charts -->
+      <div class="card">
+        <h2 class="card-title">Score Trend</h2>
+        <p class="chart-desc">Your score over every attempt — line shows progress over time</p>
+        <div class="chart-container">
+          <img src="{{ url_for('chart', student_name=student_name, chart_type='line') }}"
+               alt="Score Trend" class="chart-img" />
+        </div>
+      </div>
+
+      <div class="charts-row">
+        <div class="card chart-half">
+          <h2 class="card-title">Score per Attempt</h2>
+          <p class="chart-desc">Yellow = Beginner &nbsp;&bull;&nbsp; Blue = Intermediate &nbsp;&bull;&nbsp; Green = Advanced</p>
+          <div class="chart-container">
+            <img src="{{ url_for('chart', student_name=student_name, chart_type='bar') }}"
+                 alt="Score per Attempt" class="chart-img" />
+          </div>
+        </div>
+        <div class="card chart-half">
+          <h2 class="card-title">Average by Subject</h2>
+          <p class="chart-desc">Average score across all attempts per subject</p>
+          <div class="chart-container">
+            <img src="{{ url_for('chart', student_name=student_name, chart_type='subject') }}"
+                 alt="Average by Subject" class="chart-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Attempts Table -->
+      <div class="card">
+        <h2 class="card-title">Attempt History — {{ student_name }}</h2>
+        <div class="table-wrap">
+          <table class="attempts-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Subject</th>
+                <th>Score</th>
+                <th>Level</th>
+                <th>Weak Topics</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in rows %}
+              <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ row['subject'] }}</td>
+                <td>
+                  <div class="score-bar-cell">
+                    <div class="score-bar-fill score-fill-{{ row['level']|lower }}" style="width:{{ row['score'] }}%"></div>
+                    <span>{{ row['score'] }}%</span>
+                  </div>
+                </td>
+                <td><span class="badge badge-{{ row['level']|lower }}">{{ row['level'] }}</span></td>
+                <td class="weak-cell">{{ row['weak_topics'] or '—' }}</td>
+                <td class="date-cell">{{ row['timestamp'][:16] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {% else %}
+      <div class="card empty-state">
+        <p>No attempts found for <strong>{{ student_name }}</strong>.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Take a Quiz Now</a>
+      </div>
+      {% endif %}
+
+    {% else %}
+    <div class="card empty-state">
+      <p>Enter a student name above to view their progress and charts.</p>
+    </div>
+    {% endif %}
+
+  </main>
+
+  <footer class="footer">
+    SmartLearn AI &nbsp;&bull;&nbsp; AICTE&ndash;IBM SkillsBuild ML &amp; Applied AI Internship
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

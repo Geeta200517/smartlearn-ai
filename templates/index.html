@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartLearn AI – Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="nav-brand">SmartLearn AI</a>
+    <div class="nav-right">
+      <a href="{{ url_for('dashboard') }}" class="nav-link">&#128202; Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">AICTE &ndash; IBM SkillsBuild Internship &nbsp;&bull;&nbsp; SDG 4 &ndash; Quality Education</span>
+        <h1 class="hero-title">Smart<span>Learn</span> AI</h1>
+        <p class="hero-subtitle">Personalized Learning &amp; Quiz Recommendation System — discover your level, fix your weak spots, and grow.</p>
+        <p class="hero-sdg">Powered by Adaptive AI &nbsp;&bull;&nbsp; IBM Granite Ready</p>
+      </div>
+    </div>
+
+    <!-- Start Form -->
+    <div class="form-card">
+      <h2 class="card-title">Start Your Quiz</h2>
+      <form action="{{ url_for('start') }}" method="POST">
+        <div class="form-group">
+          <label for="student_name">Your Name</label>
+          <input
+            type="text"
+            id="student_name"
+            name="student_name"
+            placeholder="e.g. Arjun Sharma"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <label for="subject">Select Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Choose a subject…</option>
+            {% for s in subjects %}
+            <option value="{{ s }}">{{ s }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          Start Quiz &rarr;
+        </button>
+      </form>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">&#128202;</span>
+        <h3>Smart Level Detection</h3>
+        <p>Automatically classified as Beginner, Intermediate, or Advanced based on your score.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#127919;</span>
+        <h3>Weak Topic Finder</h3>
+        <p>Every wrong answer is tagged. We surface exactly which topics need more attention.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#129504;</span>
+        <h3>Adaptive Learning</h3>
+        <p>Your next quiz difficulty is chosen automatically based on your past performance history.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#129302;</span>
+        <h3>AI Explanations</h3>
+        <p>Get plain-English "why was I wrong?" explanations, powered by IBM Granite AI.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    SmartLearn AI &nbsp;&bull;&nbsp; AICTE&ndash;IBM SkillsBuild ML &amp; Applied AI Internship &nbsp;&bull;&nbsp; SDG 4 Quality Education
+  </footer>
+</body>
+</html>

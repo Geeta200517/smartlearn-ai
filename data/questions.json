@@ -1,0 +1,971 @@
+{
+  "Python": {
+    "Beginner": [
+      {
+        "id": "py_b_1",
+        "question": "Which keyword is used to define a function in Python?",
+        "options": ["func", "define", "def", "function"],
+        "answer": "def",
+        "topic": "Python Functions"
+      },
+      {
+        "id": "py_b_2",
+        "question": "What is the output of: print(2 + 3)?",
+        "options": ["23", "5", "2+3", "Error"],
+        "answer": "5",
+        "topic": "Python Basics"
+      },
+      {
+        "id": "py_b_3",
+        "question": "Which data type is used to store True or False?",
+        "options": ["int", "str", "bool", "float"],
+        "answer": "bool",
+        "topic": "Python Data Types"
+      },
+      {
+        "id": "py_b_4",
+        "question": "How do you create a comment in Python?",
+        "options": ["// comment", "/* comment */", "# comment", "-- comment"],
+        "answer": "# comment",
+        "topic": "Python Basics"
+      },
+      {
+        "id": "py_b_5",
+        "question": "Which function is used to display output in Python?",
+        "options": ["echo()", "console.log()", "print()", "display()"],
+        "answer": "print()",
+        "topic": "Python Basics"
+      },
+      {
+        "id": "py_b_6",
+        "question": "What will len('hello') return?",
+        "options": ["4", "5", "6", "Error"],
+        "answer": "5",
+        "topic": "Python Strings"
+      },
+      {
+        "id": "py_b_7",
+        "question": "Which of the following is used to take input from the user?",
+        "options": ["scan()", "input()", "read()", "get()"],
+        "answer": "input()",
+        "topic": "Python Basics"
+      },
+      {
+        "id": "py_b_8",
+        "question": "What is the correct way to create a list in Python?",
+        "options": ["{1, 2, 3}", "(1, 2, 3)", "[1, 2, 3]", "<1, 2, 3>"],
+        "answer": "[1, 2, 3]",
+        "topic": "Python Lists"
+      },
+      {
+        "id": "py_b_9",
+        "question": "Which symbol is used for exponentiation in Python?",
+        "options": ["^", "**", "//", "%"],
+        "answer": "**",
+        "topic": "Python Operators"
+      },
+      {
+        "id": "py_b_10",
+        "question": "What does the 'if' statement do?",
+        "options": ["Loops through a list", "Defines a function", "Checks a condition", "Imports a module"],
+        "answer": "Checks a condition",
+        "topic": "Python Control Flow"
+      },
+      {
+        "id": "py_b_11",
+        "question": "What is the index of the first element in a Python list?",
+        "options": ["1", "-1", "0", "None"],
+        "answer": "0",
+        "topic": "Python Lists"
+      },
+      {
+        "id": "py_b_12",
+        "question": "Which keyword is used to create a loop that runs a fixed number of times?",
+        "options": ["while", "repeat", "for", "loop"],
+        "answer": "for",
+        "topic": "Python Loops"
+      },
+      {
+        "id": "py_b_13",
+        "question": "What is the correct way to assign a value to a variable?",
+        "options": ["x == 5", "x := 5", "x = 5", "int x = 5"],
+        "answer": "x = 5",
+        "topic": "Python Basics"
+      },
+      {
+        "id": "py_b_14",
+        "question": "Which method adds an element to the end of a list?",
+        "options": ["add()", "push()", "append()", "insert()"],
+        "answer": "append()",
+        "topic": "Python Lists"
+      },
+      {
+        "id": "py_b_15",
+        "question": "What does 'int('5')' return?",
+        "options": ["'5'", "5", "5.0", "Error"],
+        "answer": "5",
+        "topic": "Python Data Types"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "py_i_1",
+        "question": "What is a lambda function in Python?",
+        "options": ["A named function", "An anonymous one-line function", "A loop", "A class method"],
+        "answer": "An anonymous one-line function",
+        "topic": "Python Functions"
+      },
+      {
+        "id": "py_i_2",
+        "question": "Which of these is a mutable data type in Python?",
+        "options": ["tuple", "str", "int", "list"],
+        "answer": "list",
+        "topic": "Python Data Types"
+      },
+      {
+        "id": "py_i_3",
+        "question": "What does the 'self' keyword represent in a class method?",
+        "options": ["The class itself", "The current instance", "A global variable", "The parent class"],
+        "answer": "The current instance",
+        "topic": "Python OOP"
+      },
+      {
+        "id": "py_i_4",
+        "question": "What is the output of: [x*2 for x in range(3)]?",
+        "options": ["[0, 1, 2]", "[0, 2, 4]", "[2, 4, 6]", "[1, 2, 3]"],
+        "answer": "[0, 2, 4]",
+        "topic": "Python List Comprehension"
+      },
+      {
+        "id": "py_i_5",
+        "question": "How do you open a file named 'data.txt' for reading?",
+        "options": ["open('data.txt', 'w')", "open('data.txt', 'r')", "read('data.txt')", "file.open('data.txt')"],
+        "answer": "open('data.txt', 'r')",
+        "topic": "Python File Handling"
+      },
+      {
+        "id": "py_i_6",
+        "question": "What is a dictionary in Python?",
+        "options": ["An ordered list", "A set of unique values", "A key-value pair collection", "A type of loop"],
+        "answer": "A key-value pair collection",
+        "topic": "Python Dictionaries"
+      },
+      {
+        "id": "py_i_7",
+        "question": "Which exception is raised when dividing by zero?",
+        "options": ["ValueError", "TypeError", "ZeroDivisionError", "ArithmeticError"],
+        "answer": "ZeroDivisionError",
+        "topic": "Python Exception Handling"
+      },
+      {
+        "id": "py_i_8",
+        "question": "What does *args allow in a function?",
+        "options": ["Keyword-only arguments", "Variable number of positional arguments", "Default arguments", "No arguments"],
+        "answer": "Variable number of positional arguments",
+        "topic": "Python Functions"
+      },
+      {
+        "id": "py_i_9",
+        "question": "What is the purpose of __init__ in a class?",
+        "options": ["To delete an object", "To initialize object attributes", "To define class methods", "To inherit from a parent"],
+        "answer": "To initialize object attributes",
+        "topic": "Python OOP"
+      },
+      {
+        "id": "py_i_10",
+        "question": "Which module is used for regular expressions in Python?",
+        "options": ["regex", "re", "regexp", "string"],
+        "answer": "re",
+        "topic": "Python Modules"
+      },
+      {
+        "id": "py_i_11",
+        "question": "What does the 'try/except' block do?",
+        "options": ["Loops over a list", "Handles errors gracefully", "Defines a class", "Imports a module"],
+        "answer": "Handles errors gracefully",
+        "topic": "Python Exception Handling"
+      },
+      {
+        "id": "py_i_12",
+        "question": "What is a Python generator?",
+        "options": ["A function that returns a list", "A function using 'yield' to produce values lazily", "A class decorator", "A type of dictionary"],
+        "answer": "A function using 'yield' to produce values lazily",
+        "topic": "Python Advanced Functions"
+      },
+      {
+        "id": "py_i_13",
+        "question": "Which built-in function returns the largest value in a list?",
+        "options": ["largest()", "top()", "max()", "high()"],
+        "answer": "max()",
+        "topic": "Python Built-in Functions"
+      },
+      {
+        "id": "py_i_14",
+        "question": "What does 'enumerate()' do?",
+        "options": ["Sorts a list", "Returns index and value pairs", "Filters elements", "Reverses a list"],
+        "answer": "Returns index and value pairs",
+        "topic": "Python Built-in Functions"
+      },
+      {
+        "id": "py_i_15",
+        "question": "What is inheritance in Python OOP?",
+        "options": ["Copying a class", "A child class acquiring properties of a parent class", "Hiding class data", "Overloading operators"],
+        "answer": "A child class acquiring properties of a parent class",
+        "topic": "Python OOP"
+      }
+    ],
+    "Advanced": [
+      {
+        "id": "py_a_1",
+        "question": "What is a decorator in Python?",
+        "options": ["A CSS-like style tag", "A function that wraps another function to extend its behaviour", "A type of loop", "A database connector"],
+        "answer": "A function that wraps another function to extend its behaviour",
+        "topic": "Python Decorators"
+      },
+      {
+        "id": "py_a_2",
+        "question": "What does the GIL (Global Interpreter Lock) do?",
+        "options": ["Speeds up multi-threading", "Allows only one thread to execute Python bytecode at a time", "Handles garbage collection", "Manages imports"],
+        "answer": "Allows only one thread to execute Python bytecode at a time",
+        "topic": "Python Concurrency"
+      },
+      {
+        "id": "py_a_3",
+        "question": "What is the difference between @staticmethod and @classmethod?",
+        "options": ["No difference", "@classmethod takes cls, @staticmethod takes no implicit first arg", "@staticmethod takes self", "Both take self"],
+        "answer": "@classmethod takes cls, @staticmethod takes no implicit first arg",
+        "topic": "Python OOP"
+      },
+      {
+        "id": "py_a_4",
+        "question": "What is a context manager used for?",
+        "options": ["Managing imports", "Resource management using 'with' statement", "Defining metaclasses", "Handling async code"],
+        "answer": "Resource management using 'with' statement",
+        "topic": "Python Advanced Features"
+      },
+      {
+        "id": "py_a_5",
+        "question": "Which method must a class implement to be used as an iterator?",
+        "options": ["__iter__ and __next__", "__start__ and __stop__", "__begin__ and __end__", "__index__ and __fetch__"],
+        "answer": "__iter__ and __next__",
+        "topic": "Python Iterators"
+      },
+      {
+        "id": "py_a_6",
+        "question": "What does 'asyncio' provide?",
+        "options": ["Multi-processing", "Synchronous I/O", "Asynchronous programming with event loops", "Thread pooling"],
+        "answer": "Asynchronous programming with event loops",
+        "topic": "Python Concurrency"
+      },
+      {
+        "id": "py_a_7",
+        "question": "What is a metaclass in Python?",
+        "options": ["A base class", "A class whose instances are classes", "An abstract method", "A type hint"],
+        "answer": "A class whose instances are classes",
+        "topic": "Python Metaclasses"
+      },
+      {
+        "id": "py_a_8",
+        "question": "What does __slots__ do in a Python class?",
+        "options": ["Adds extra methods", "Restricts attribute creation to save memory", "Enables multi-inheritance", "Defines class constants"],
+        "answer": "Restricts attribute creation to save memory",
+        "topic": "Python Advanced Features"
+      },
+      {
+        "id": "py_a_9",
+        "question": "How does Python's garbage collector handle reference cycles?",
+        "options": ["It doesn't handle them", "Using a cyclic garbage collector in addition to reference counting", "By restarting the interpreter", "Using __del__ exclusively"],
+        "answer": "Using a cyclic garbage collector in addition to reference counting",
+        "topic": "Python Memory Management"
+      },
+      {
+        "id": "py_a_10",
+        "question": "What is the purpose of __repr__ vs __str__?",
+        "options": ["They are identical", "__repr__ is for developers/debugging, __str__ is for end-user display", "__str__ is for debuggers", "__repr__ is only for floats"],
+        "answer": "__repr__ is for developers/debugging, __str__ is for end-user display",
+        "topic": "Python OOP"
+      },
+      {
+        "id": "py_a_11",
+        "question": "What is 'monkey patching'?",
+        "options": ["A testing library", "Dynamically modifying a class or module at runtime", "A type of design pattern", "A memory optimization technique"],
+        "answer": "Dynamically modifying a class or module at runtime",
+        "topic": "Python Advanced Features"
+      },
+      {
+        "id": "py_a_12",
+        "question": "Which of the following correctly describes a Python closure?",
+        "options": ["A class with private methods", "An inner function that remembers variables from its enclosing scope", "A locked module", "A sealed dictionary"],
+        "answer": "An inner function that remembers variables from its enclosing scope",
+        "topic": "Python Closures"
+      },
+      {
+        "id": "py_a_13",
+        "question": "What does 'functools.lru_cache' do?",
+        "options": ["Limits function recursion", "Caches function results for repeated inputs", "Logs function calls", "Speeds up list comprehensions"],
+        "answer": "Caches function results for repeated inputs",
+        "topic": "Python Advanced Functions"
+      },
+      {
+        "id": "py_a_14",
+        "question": "What is the MRO (Method Resolution Order) in Python?",
+        "options": ["The order in which files are imported", "The order Python looks up methods in class hierarchies", "The order of function arguments", "The order of list elements"],
+        "answer": "The order Python looks up methods in class hierarchies",
+        "topic": "Python OOP"
+      },
+      {
+        "id": "py_a_15",
+        "question": "What is a descriptor in Python?",
+        "options": ["A docstring", "An object that defines __get__, __set__, or __delete__ to control attribute access", "A type annotation", "A class variable"],
+        "answer": "An object that defines __get__, __set__, or __delete__ to control attribute access",
+        "topic": "Python Advanced Features"
+      }
+    ]
+  },
+  "Machine Learning": {
+    "Beginner": [
+      {
+        "id": "ml_b_1",
+        "question": "What does ML stand for?",
+        "options": ["Meta Language", "Machine Learning", "Model Logic", "Modular Layer"],
+        "answer": "Machine Learning",
+        "topic": "ML Basics"
+      },
+      {
+        "id": "ml_b_2",
+        "question": "Which type of ML uses labelled data?",
+        "options": ["Unsupervised", "Reinforcement", "Supervised", "Semi-supervised"],
+        "answer": "Supervised",
+        "topic": "ML Types"
+      },
+      {
+        "id": "ml_b_3",
+        "question": "What is a 'feature' in machine learning?",
+        "options": ["A bug in the model", "An input variable used for prediction", "The model's output", "A type of neural network"],
+        "answer": "An input variable used for prediction",
+        "topic": "ML Terminology"
+      },
+      {
+        "id": "ml_b_4",
+        "question": "What is the purpose of a training dataset?",
+        "options": ["To test the final model", "To teach the model patterns", "To deploy the model", "To visualise results"],
+        "answer": "To teach the model patterns",
+        "topic": "ML Workflow"
+      },
+      {
+        "id": "ml_b_5",
+        "question": "Which algorithm is used for classification of emails as spam or not spam?",
+        "options": ["K-Means", "Linear Regression", "Logistic Regression", "PCA"],
+        "answer": "Logistic Regression",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_b_6",
+        "question": "What does overfitting mean?",
+        "options": ["Model performs well on training data but poorly on new data", "Model is too simple", "Model has no errors", "Model uses too many features"],
+        "answer": "Model performs well on training data but poorly on new data",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_b_7",
+        "question": "Which Python library is most commonly used for machine learning?",
+        "options": ["NumPy", "Pandas", "scikit-learn", "Matplotlib"],
+        "answer": "scikit-learn",
+        "topic": "ML Tools"
+      },
+      {
+        "id": "ml_b_8",
+        "question": "What is the target variable in ML also called?",
+        "options": ["Feature", "Predictor", "Label", "Column"],
+        "answer": "Label",
+        "topic": "ML Terminology"
+      },
+      {
+        "id": "ml_b_9",
+        "question": "Which type of ML has no labelled data?",
+        "options": ["Supervised", "Unsupervised", "Reinforcement", "Transfer"],
+        "answer": "Unsupervised",
+        "topic": "ML Types"
+      },
+      {
+        "id": "ml_b_10",
+        "question": "What does a confusion matrix show?",
+        "options": ["Data distribution", "Feature importance", "Correct and incorrect predictions", "Training loss"],
+        "answer": "Correct and incorrect predictions",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_b_11",
+        "question": "What is the purpose of train-test split?",
+        "options": ["To increase data size", "To evaluate model on unseen data", "To remove duplicate rows", "To normalise data"],
+        "answer": "To evaluate model on unseen data",
+        "topic": "ML Workflow"
+      },
+      {
+        "id": "ml_b_12",
+        "question": "Which algorithm groups similar data points together?",
+        "options": ["Linear Regression", "Decision Tree", "K-Means Clustering", "SVM"],
+        "answer": "K-Means Clustering",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_b_13",
+        "question": "What is accuracy in classification?",
+        "options": ["Number of features", "Ratio of correct predictions to total predictions", "Training time", "Model size"],
+        "answer": "Ratio of correct predictions to total predictions",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_b_14",
+        "question": "What does Linear Regression predict?",
+        "options": ["A category", "A continuous numerical value", "A cluster", "A probability only"],
+        "answer": "A continuous numerical value",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_b_15",
+        "question": "Which step comes first in a typical ML pipeline?",
+        "options": ["Model training", "Data collection", "Deployment", "Evaluation"],
+        "answer": "Data collection",
+        "topic": "ML Workflow"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "ml_i_1",
+        "question": "What is cross-validation used for?",
+        "options": ["Speeding up training", "Reliable model evaluation on limited data", "Data augmentation", "Feature selection"],
+        "answer": "Reliable model evaluation on limited data",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_i_2",
+        "question": "What is the purpose of regularisation (L1/L2)?",
+        "options": ["Increase model complexity", "Prevent overfitting by penalising large weights", "Speed up training", "Increase accuracy on training data"],
+        "answer": "Prevent overfitting by penalising large weights",
+        "topic": "ML Regularisation"
+      },
+      {
+        "id": "ml_i_3",
+        "question": "What does a Decision Tree split on?",
+        "options": ["Random features", "The feature that best separates classes", "The last feature", "The most frequent value"],
+        "answer": "The feature that best separates classes",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_i_4",
+        "question": "What is the kernel trick in SVM?",
+        "options": ["Removing outliers", "Mapping data to higher dimensions to make it linearly separable", "Reducing dimensions", "Normalising features"],
+        "answer": "Mapping data to higher dimensions to make it linearly separable",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_i_5",
+        "question": "What is feature scaling and why is it needed?",
+        "options": ["Removing features to reduce size", "Normalising features so algorithms like KNN and SVM work correctly", "Selecting important features", "Encoding categorical data"],
+        "answer": "Normalising features so algorithms like KNN and SVM work correctly",
+        "topic": "ML Data Preprocessing"
+      },
+      {
+        "id": "ml_i_6",
+        "question": "What does PCA do?",
+        "options": ["Increases features", "Reduces dimensionality while preserving variance", "Classifies data", "Clusters data"],
+        "answer": "Reduces dimensionality while preserving variance",
+        "topic": "ML Dimensionality Reduction"
+      },
+      {
+        "id": "ml_i_7",
+        "question": "What is the bias-variance tradeoff?",
+        "options": ["Balancing training speed vs accuracy", "Balancing underfitting (high bias) and overfitting (high variance)", "Choosing between features", "Selecting the learning rate"],
+        "answer": "Balancing underfitting (high bias) and overfitting (high variance)",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_i_8",
+        "question": "What is Random Forest?",
+        "options": ["A single deep decision tree", "An ensemble of decision trees using bagging", "A neural network", "A clustering algorithm"],
+        "answer": "An ensemble of decision trees using bagging",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_i_9",
+        "question": "What is the F1-Score?",
+        "options": ["Accuracy divided by 2", "The harmonic mean of precision and recall", "The average of all metrics", "The number of true positives"],
+        "answer": "The harmonic mean of precision and recall",
+        "topic": "ML Model Evaluation"
+      },
+      {
+        "id": "ml_i_10",
+        "question": "What is one-hot encoding used for?",
+        "options": ["Scaling numeric features", "Converting categorical variables to binary columns", "Reducing dimensions", "Splitting data"],
+        "answer": "Converting categorical variables to binary columns",
+        "topic": "ML Data Preprocessing"
+      },
+      {
+        "id": "ml_i_11",
+        "question": "What is gradient descent?",
+        "options": ["A type of decision tree", "An optimisation algorithm that minimises loss by updating weights", "A regularisation method", "A data cleaning technique"],
+        "answer": "An optimisation algorithm that minimises loss by updating weights",
+        "topic": "ML Optimisation"
+      },
+      {
+        "id": "ml_i_12",
+        "question": "What does the learning rate control in gradient descent?",
+        "options": ["Number of epochs", "Size of each weight update step", "Number of features", "Data split ratio"],
+        "answer": "Size of each weight update step",
+        "topic": "ML Optimisation"
+      },
+      {
+        "id": "ml_i_13",
+        "question": "What is the purpose of the validation set?",
+        "options": ["Train the model", "Tune hyperparameters without touching the test set", "Deploy the model", "Store raw data"],
+        "answer": "Tune hyperparameters without touching the test set",
+        "topic": "ML Workflow"
+      },
+      {
+        "id": "ml_i_14",
+        "question": "What does KNN stand for?",
+        "options": ["Key Nearest Node", "K Nearest Neighbours", "Kernel Neural Network", "K Null Nodes"],
+        "answer": "K Nearest Neighbours",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_i_15",
+        "question": "What is the ROC-AUC score?",
+        "options": ["Root of accuracy", "Area under the ROC curve measuring classifier performance", "Residual of confusion matrix", "Average update coefficient"],
+        "answer": "Area under the ROC curve measuring classifier performance",
+        "topic": "ML Model Evaluation"
+      }
+    ],
+    "Advanced": [
+      {
+        "id": "ml_a_1",
+        "question": "What is the vanishing gradient problem in deep networks?",
+        "options": ["Gradients grow too large", "Gradients shrink exponentially making early layers learn very slowly", "Model loses accuracy over epochs", "Loss function becomes undefined"],
+        "answer": "Gradients shrink exponentially making early layers learn very slowly",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_2",
+        "question": "What is dropout used for in neural networks?",
+        "options": ["Speeding up training", "Randomly disabling neurons to prevent overfitting", "Increasing model depth", "Normalising outputs"],
+        "answer": "Randomly disabling neurons to prevent overfitting",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_3",
+        "question": "What does the attention mechanism in transformers do?",
+        "options": ["Removes redundant features", "Weights the importance of each input token relative to others", "Replaces LSTM layers", "Performs convolution"],
+        "answer": "Weights the importance of each input token relative to others",
+        "topic": "NLP and Transformers"
+      },
+      {
+        "id": "ml_a_4",
+        "question": "What is XGBoost?",
+        "options": ["A neural network framework", "An optimised gradient boosting algorithm", "A feature selection tool", "A data visualisation library"],
+        "answer": "An optimised gradient boosting algorithm",
+        "topic": "ML Algorithms"
+      },
+      {
+        "id": "ml_a_5",
+        "question": "What is the difference between bagging and boosting?",
+        "options": ["No difference", "Bagging trains models in parallel, boosting trains sequentially correcting errors", "Boosting uses random subsets", "Bagging is only for regression"],
+        "answer": "Bagging trains models in parallel, boosting trains sequentially correcting errors",
+        "topic": "Ensemble Methods"
+      },
+      {
+        "id": "ml_a_6",
+        "question": "What is batch normalisation?",
+        "options": ["Splitting data into batches", "Normalising activations within a mini-batch to stabilise training", "A type of regularisation like L2", "Shuffling training data"],
+        "answer": "Normalising activations within a mini-batch to stabilise training",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_7",
+        "question": "What is a Convolutional Neural Network (CNN) primarily used for?",
+        "options": ["Time series data", "Image and spatial data processing", "Text generation", "Tabular data classification"],
+        "answer": "Image and spatial data processing",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_8",
+        "question": "What is transfer learning?",
+        "options": ["Moving a model to a new server", "Using a pre-trained model as the starting point for a new task", "Transferring data between databases", "Sharing weights between layers"],
+        "answer": "Using a pre-trained model as the starting point for a new task",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_9",
+        "question": "What does SHAP explain?",
+        "options": ["Training time", "The contribution of each feature to a model's prediction", "Model architecture", "Data pipeline steps"],
+        "answer": "The contribution of each feature to a model's prediction",
+        "topic": "ML Explainability"
+      },
+      {
+        "id": "ml_a_10",
+        "question": "What is the purpose of a GAN (Generative Adversarial Network)?",
+        "options": ["Classifying images", "Generating realistic synthetic data using a generator and discriminator", "Clustering data", "Performing regression"],
+        "answer": "Generating realistic synthetic data using a generator and discriminator",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_11",
+        "question": "What is the 'curse of dimensionality'?",
+        "options": ["Models with too many layers", "As dimensions increase, data becomes sparse making learning harder", "Too many training samples", "Overly complex loss functions"],
+        "answer": "As dimensions increase, data becomes sparse making learning harder",
+        "topic": "ML Theory"
+      },
+      {
+        "id": "ml_a_12",
+        "question": "What is an LSTM used for?",
+        "options": ["Image classification", "Handling sequential data with long-term dependencies", "Clustering", "Feature extraction from tables"],
+        "answer": "Handling sequential data with long-term dependencies",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_13",
+        "question": "What is knowledge distillation?",
+        "options": ["Extracting rules from a decision tree", "Training a smaller model to mimic a larger model's behaviour", "Removing noisy features", "Compressing a dataset"],
+        "answer": "Training a smaller model to mimic a larger model's behaviour",
+        "topic": "ML Optimisation"
+      },
+      {
+        "id": "ml_a_14",
+        "question": "What is the role of the loss function in training?",
+        "options": ["To load data", "To measure prediction error and guide weight updates", "To split data", "To visualise results"],
+        "answer": "To measure prediction error and guide weight updates",
+        "topic": "Deep Learning"
+      },
+      {
+        "id": "ml_a_15",
+        "question": "What is federated learning?",
+        "options": ["Combining multiple models into one", "Training models on distributed data without sharing raw data centrally", "A type of ensemble method", "Learning from government datasets"],
+        "answer": "Training models on distributed data without sharing raw data centrally",
+        "topic": "ML Advanced Topics"
+      }
+    ]
+  },
+  "Data Structures": {
+    "Beginner": [
+      {
+        "id": "ds_b_1",
+        "question": "What is an array?",
+        "options": ["A collection of key-value pairs", "A fixed-size collection of elements of the same type", "A linked list", "A tree structure"],
+        "answer": "A fixed-size collection of elements of the same type",
+        "topic": "Arrays"
+      },
+      {
+        "id": "ds_b_2",
+        "question": "What is a stack?",
+        "options": ["A FIFO data structure", "A LIFO data structure", "A sorted list", "A binary tree"],
+        "answer": "A LIFO data structure",
+        "topic": "Stacks"
+      },
+      {
+        "id": "ds_b_3",
+        "question": "What operation adds an element to the top of a stack?",
+        "options": ["enqueue", "push", "insert", "add"],
+        "answer": "push",
+        "topic": "Stacks"
+      },
+      {
+        "id": "ds_b_4",
+        "question": "What is a queue?",
+        "options": ["A LIFO structure", "A FIFO structure", "A tree", "A graph"],
+        "answer": "A FIFO structure",
+        "topic": "Queues"
+      },
+      {
+        "id": "ds_b_5",
+        "question": "What does FIFO stand for?",
+        "options": ["First In First Out", "Fast Input Fast Output", "Fixed Index Fixed Order", "First Index First Out"],
+        "answer": "First In First Out",
+        "topic": "Queues"
+      },
+      {
+        "id": "ds_b_6",
+        "question": "What is a linked list?",
+        "options": ["A list stored in a file", "A sequence of nodes where each node points to the next", "An array with pointers", "A hash table"],
+        "answer": "A sequence of nodes where each node points to the next",
+        "topic": "Linked Lists"
+      },
+      {
+        "id": "ds_b_7",
+        "question": "What is the time complexity of accessing an element in an array by index?",
+        "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+        "answer": "O(1)",
+        "topic": "Arrays"
+      },
+      {
+        "id": "ds_b_8",
+        "question": "What is a binary tree?",
+        "options": ["A tree with exactly two nodes", "A tree where each node has at most two children", "A sorted array", "A doubly linked list"],
+        "answer": "A tree where each node has at most two children",
+        "topic": "Trees"
+      },
+      {
+        "id": "ds_b_9",
+        "question": "What does a hash table store?",
+        "options": ["Sorted arrays", "Key-value pairs using a hash function", "Linked nodes", "Binary data"],
+        "answer": "Key-value pairs using a hash function",
+        "topic": "Hash Tables"
+      },
+      {
+        "id": "ds_b_10",
+        "question": "What is the root of a tree?",
+        "options": ["The last node", "The topmost node with no parent", "A leaf node", "A node with two children"],
+        "answer": "The topmost node with no parent",
+        "topic": "Trees"
+      },
+      {
+        "id": "ds_b_11",
+        "question": "What is a leaf node in a tree?",
+        "options": ["The root node", "A node with no children", "A node with two children", "The deepest node"],
+        "answer": "A node with no children",
+        "topic": "Trees"
+      },
+      {
+        "id": "ds_b_12",
+        "question": "Which data structure is best for implementing a browser's Back button?",
+        "options": ["Queue", "Stack", "Array", "Graph"],
+        "answer": "Stack",
+        "topic": "Stacks"
+      },
+      {
+        "id": "ds_b_13",
+        "question": "What is the worst-case time complexity of linear search?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+        "answer": "O(n)",
+        "topic": "Searching"
+      },
+      {
+        "id": "ds_b_14",
+        "question": "What is Big O notation used for?",
+        "options": ["Writing code", "Describing algorithm time and space complexity", "Database queries", "Network protocols"],
+        "answer": "Describing algorithm time and space complexity",
+        "topic": "Algorithm Complexity"
+      },
+      {
+        "id": "ds_b_15",
+        "question": "What operation removes an element from the top of a stack?",
+        "options": ["dequeue", "pop", "delete", "remove"],
+        "answer": "pop",
+        "topic": "Stacks"
+      }
+    ],
+    "Intermediate": [
+      {
+        "id": "ds_i_1",
+        "question": "What is the time complexity of binary search?",
+        "options": ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
+        "answer": "O(log n)",
+        "topic": "Searching"
+      },
+      {
+        "id": "ds_i_2",
+        "question": "What is a doubly linked list?",
+        "options": ["A list with two head pointers", "A list where each node has pointers to both next and previous nodes", "Two separate linked lists", "A circular linked list"],
+        "answer": "A list where each node has pointers to both next and previous nodes",
+        "topic": "Linked Lists"
+      },
+      {
+        "id": "ds_i_3",
+        "question": "What is a Binary Search Tree (BST) property?",
+        "options": ["All nodes are equal", "Left child < parent < right child", "Right child < parent < left child", "All leaves are at same level"],
+        "answer": "Left child < parent < right child",
+        "topic": "Trees"
+      },
+      {
+        "id": "ds_i_4",
+        "question": "What is the average time complexity of insertion in a hash table?",
+        "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+        "answer": "O(1)",
+        "topic": "Hash Tables"
+      },
+      {
+        "id": "ds_i_5",
+        "question": "What is BFS (Breadth First Search)?",
+        "options": ["Traversal going as deep as possible first", "Traversal level by level using a queue", "Sorting using a tree", "Searching using binary splitting"],
+        "answer": "Traversal level by level using a queue",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_i_6",
+        "question": "What is DFS (Depth First Search)?",
+        "options": ["Traversal level by level", "Traversal going as deep as possible using a stack or recursion", "A sorting algorithm", "A hashing technique"],
+        "answer": "Traversal going as deep as possible using a stack or recursion",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_i_7",
+        "question": "What is a heap data structure?",
+        "options": ["A sorted array", "A complete binary tree satisfying the heap property", "A type of hash table", "A queue implemented with a tree"],
+        "answer": "A complete binary tree satisfying the heap property",
+        "topic": "Heaps"
+      },
+      {
+        "id": "ds_i_8",
+        "question": "What is the time complexity of Merge Sort?",
+        "options": ["O(n^2)", "O(n log n)", "O(log n)", "O(n)"],
+        "answer": "O(n log n)",
+        "topic": "Sorting Algorithms"
+      },
+      {
+        "id": "ds_i_9",
+        "question": "What is a graph?",
+        "options": ["A type of sorted tree", "A collection of nodes (vertices) connected by edges", "A 2D array", "A linked list of queues"],
+        "answer": "A collection of nodes (vertices) connected by edges",
+        "topic": "Graphs"
+      },
+      {
+        "id": "ds_i_10",
+        "question": "What is a circular linked list?",
+        "options": ["A list shaped like a circle on screen", "A linked list where the last node points back to the first", "A doubly linked list", "A list with a fixed size"],
+        "answer": "A linked list where the last node points back to the first",
+        "topic": "Linked Lists"
+      },
+      {
+        "id": "ds_i_11",
+        "question": "What is the worst-case time complexity of Quick Sort?",
+        "options": ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+        "answer": "O(n^2)",
+        "topic": "Sorting Algorithms"
+      },
+      {
+        "id": "ds_i_12",
+        "question": "What is a priority queue?",
+        "options": ["A queue that processes elements in random order", "A queue where each element has a priority and higher priority is served first", "A stack used as a queue", "A FIFO queue with two ends"],
+        "answer": "A queue where each element has a priority and higher priority is served first",
+        "topic": "Queues"
+      },
+      {
+        "id": "ds_i_13",
+        "question": "What is in-order traversal of a BST?",
+        "options": ["Root, Left, Right", "Left, Root, Right (gives sorted output)", "Right, Root, Left", "Level by level"],
+        "answer": "Left, Root, Right (gives sorted output)",
+        "topic": "Trees"
+      },
+      {
+        "id": "ds_i_14",
+        "question": "What is a collision in a hash table?",
+        "options": ["Two tables merging", "Two keys mapping to the same hash index", "An overflow error", "A duplicate key error"],
+        "answer": "Two keys mapping to the same hash index",
+        "topic": "Hash Tables"
+      },
+      {
+        "id": "ds_i_15",
+        "question": "What is space complexity?",
+        "options": ["The time an algorithm takes", "The amount of memory an algorithm uses relative to input size", "The number of loops in an algorithm", "The number of variables declared"],
+        "answer": "The amount of memory an algorithm uses relative to input size",
+        "topic": "Algorithm Complexity"
+      }
+    ],
+    "Advanced": [
+      {
+        "id": "ds_a_1",
+        "question": "What is an AVL tree?",
+        "options": ["A tree with only 2 levels", "A self-balancing BST where heights of subtrees differ by at most 1", "A tree sorted by insertion order", "A trie"],
+        "answer": "A self-balancing BST where heights of subtrees differ by at most 1",
+        "topic": "Advanced Trees"
+      },
+      {
+        "id": "ds_a_2",
+        "question": "What is Dijkstra's algorithm used for?",
+        "options": ["Sorting arrays", "Finding shortest path in a weighted graph", "Balancing a BST", "Hashing keys"],
+        "answer": "Finding shortest path in a weighted graph",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_a_3",
+        "question": "What is a Trie used for?",
+        "options": ["Sorting numbers", "Efficient prefix-based string searching and storage", "Graph traversal", "Memory management"],
+        "answer": "Efficient prefix-based string searching and storage",
+        "topic": "Advanced Trees"
+      },
+      {
+        "id": "ds_a_4",
+        "question": "What is dynamic programming?",
+        "options": ["A runtime code generator", "Solving complex problems by breaking into overlapping subproblems and caching results", "A graph traversal", "A type of sorting"],
+        "answer": "Solving complex problems by breaking into overlapping subproblems and caching results",
+        "topic": "Dynamic Programming"
+      },
+      {
+        "id": "ds_a_5",
+        "question": "What is a Red-Black tree?",
+        "options": ["A tree with coloured nodes", "A self-balancing BST with colouring rules to ensure O(log n) operations", "A B-tree variant", "A heap"],
+        "answer": "A self-balancing BST with colouring rules to ensure O(log n) operations",
+        "topic": "Advanced Trees"
+      },
+      {
+        "id": "ds_a_6",
+        "question": "What is the time complexity of finding the minimum in a min-heap?",
+        "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+        "answer": "O(1)",
+        "topic": "Heaps"
+      },
+      {
+        "id": "ds_a_7",
+        "question": "What is a segment tree used for?",
+        "options": ["Storing strings", "Range queries and updates on arrays efficiently", "Graph traversal", "Hashing"],
+        "answer": "Range queries and updates on arrays efficiently",
+        "topic": "Advanced Trees"
+      },
+      {
+        "id": "ds_a_8",
+        "question": "What does the Floyd-Warshall algorithm compute?",
+        "options": ["Minimum spanning tree", "All-pairs shortest paths in a weighted graph", "Topological sort", "Max flow"],
+        "answer": "All-pairs shortest paths in a weighted graph",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_a_9",
+        "question": "What is amortised analysis?",
+        "options": ["Average case analysis", "Analysis of average cost per operation over a sequence of operations", "Worst case divided by n", "Analysis of space only"],
+        "answer": "Analysis of average cost per operation over a sequence of operations",
+        "topic": "Algorithm Complexity"
+      },
+      {
+        "id": "ds_a_10",
+        "question": "What is a skip list?",
+        "options": ["A list that skips duplicates", "A probabilistic data structure allowing O(log n) search on a linked list", "A list with gaps for deleted items", "A sorted array"],
+        "answer": "A probabilistic data structure allowing O(log n) search on a linked list",
+        "topic": "Advanced Data Structures"
+      },
+      {
+        "id": "ds_a_11",
+        "question": "What is the purpose of a Union-Find (Disjoint Set) data structure?",
+        "options": ["Sorting elements", "Efficiently tracking connected components and merging sets", "Graph colouring", "Shortest path"],
+        "answer": "Efficiently tracking connected components and merging sets",
+        "topic": "Advanced Data Structures"
+      },
+      {
+        "id": "ds_a_12",
+        "question": "What is topological sorting used for?",
+        "options": ["Sorting a BST", "Ordering tasks with dependencies in a DAG", "Shortest path", "Finding cycles"],
+        "answer": "Ordering tasks with dependencies in a DAG",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_a_13",
+        "question": "What is the Bellman-Ford algorithm used for?",
+        "options": ["Only positive-weight graphs", "Shortest path supporting negative weight edges", "Minimum spanning tree", "Graph colouring"],
+        "answer": "Shortest path supporting negative weight edges",
+        "topic": "Graph Algorithms"
+      },
+      {
+        "id": "ds_a_14",
+        "question": "What is memoisation?",
+        "options": ["Writing notes about code", "Caching results of expensive function calls to avoid recomputation", "A type of recursion", "A sorting optimisation"],
+        "answer": "Caching results of expensive function calls to avoid recomputation",
+        "topic": "Dynamic Programming"
+      },
+      {
+        "id": "ds_a_15",
+        "question": "What is a B-tree used for?",
+        "options": ["In-memory sorting", "Balanced search trees optimised for disk-based storage (used in databases)", "String pattern matching", "Graph representation"],
+        "answer": "Balanced search trees optimised for disk-based storage (used in databases)",
+        "topic": "Advanced Trees"
+      }
+    ]
+  }
+}

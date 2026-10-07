@@ -1,0 +1,44 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Database (auto-created on first run)
+database.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and credentials — NEVER commit these
+.env
+.env.*
+secrets.py
+*_secret*
+*_credentials*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
